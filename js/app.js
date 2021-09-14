@@ -84,6 +84,8 @@ const updateTotal = () => {
   document.getElementById("total").innerText = grandTotal.toFixed(2);
 };
 
+
+// For Details Information
 const detailsInfo = id =>{
   const url = `https://fakestoreapi.com/products/${id}`;
   fetch(url)
@@ -99,7 +101,7 @@ const productDetails = products =>{
   <h2>Product Details</h2>
   <h4>Name: ${products.title}</h4>
   <h4>Price:$ ${products.price}</h4>
-   <h4>Price:${products.category}</h4>
+   <h4>Brand:${products.category}</h4>
    <p>Description: ${products.description}</p>
   `
   productInfo.appendChild(div);
